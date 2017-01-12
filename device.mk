@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
 $(LOCAL_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-libxlog
+libmtk_symbols 
 
 PRODUCT_PACKAGES += \
 libgui_shim
