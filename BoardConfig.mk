@@ -52,7 +52,7 @@ TARGET_LDPRELOAD += libxlog.so
 #kernel specifics
 TARGET_IS_64_BIT := true
 TARGET_USES_64_BIT_BINDER := true
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.hardware=mt6752 androidboot.selinux=disabled
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.hardware=mt6752
 TARGET_KMODULES := true
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -150,5 +150,5 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 USE_CAMERA_STUB := true
 
 #sepolicy path
-#BOARD_SEPOLICY_DIRS := \
-#        device/lenovo/aio_otfp/sepolicy
+BOARD_SEPOLICY_DIRS := \
+        device/lenovo/aio_otfp/sepolicy
